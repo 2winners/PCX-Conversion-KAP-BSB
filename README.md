@@ -138,3 +138,19 @@ open command prompt (start > cmd)
 type > "cd URL/imgkapfolder" > enter
 
 now you can paste the text from exel
+
+___
+
+ADVANCED:
+
+For those that want to i find the "white" text on the map a bit dull
+open the map KAP file with (https://notepad-plus-plus.org/downloads/) and look for :
+
+RGB/X,0,0,0 see what number is at the X
+
+scroll down to NGT/X  and change the numbers to  ,99,99,99 (the map glitches if more then 99 for some reason)
+
+SAVE
+
+now the white text should be more legible
+
