@@ -69,17 +69,17 @@ open the EXEL sheet.
 
 fill in the BLUE tiles: 
 
-ZONE
+* ZONE
 
-NAME
+* NAME
 
-SCALE
+* SCALE
 
-Top right LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
+* Top right LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
 
-Bottom left LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
+* Bottom left LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
 
-Image size X,Y and DPI (DDI)
+* Image size X,Y and DPI (DDI)
 
 .
 
@@ -133,10 +133,3 @@ open command prompt (start > cmd)
 type > "cd URL/imgkapfolder" > enter
 
 now you can paste the text from exel
-
-
-
-
-
-
-
