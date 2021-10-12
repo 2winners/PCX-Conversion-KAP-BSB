@@ -126,6 +126,11 @@ automaticly a kap file is created in the same folder that can now be read in nav
 
 ___
 
+I am looking to create a DATABASE of old PCX charts and share them. if you have used this and can share the final charts that would be appreciated.
+send a email to info@mari-caribbean.com
+
+___
+
 HAVING TROUBLE RUNNING IMGKAP?
 
 open command prompt (start > cmd)
