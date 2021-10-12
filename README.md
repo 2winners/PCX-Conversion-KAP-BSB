@@ -1,24 +1,31 @@
 # PCX-Convertion-KAP-BSB
 Tools to convert old PCX charts to new KAP/BSB files
 
+for this we will need a few items: 
 
-for this we will need a few items 
-something that can read/open/run PYTHON script 
-KONVERTOR (free tool for windows)
-GIMP (is free or other image manipulator)
-IMGKAP (free tool to convert image to KAP)
-EXEL (for making things simple)
+* something that can read/open/run PYTHON script 
+
+* KONVERTOR (free tool for windows)
+
+* GIMP (is free or other image manipulator)
+
+* IMGKAP (free tool to convert image to KAP)
+
+* EXEL (for making things simple)
+
+.
 
 for this project your files will probably look like
 
-NAME.A01
-NAME.A02
-NAME.B01
-NAME.B02
+NAME.A01,
+NAME.A02,
+NAME.B01,
+NAME.B02,
 ect 
 
-step 1 :
+___
 
+step 1 :
 
 Open the python script 
 
@@ -27,7 +34,6 @@ Run step 1, follow the instructions in the script
 ___
 
 Step 2 : 
-
 
 Convert the PCX to PNG with KONVERTOR leaving the png in the original folder
 
