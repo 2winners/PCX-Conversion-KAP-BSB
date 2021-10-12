@@ -7,9 +7,9 @@ for this we will need a few items:
 
 * KONVERTOR (free tool for windows)
 
-* GIMP (is free or other image manipulator)
+* GIMP (is free or other image manipulator) (https://www.gimp.org/)
 
-* IMGKAP (free tool to convert image to KAP)
+* IMGKAP (free tool to convert image to KAP) (https://github.com/nohal/imgkap)
 
 * EXEL (for making things simple)
 
