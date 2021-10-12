@@ -40,6 +40,43 @@ now move the image to the folder IMGKAP is located (if different)
 
 step 6 :
 open the EXEL sheet. 
+fill in the BLUE tiles: 
+ZONE
+NAME
+SCALE
+Top right LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
+Bottom left LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
+Image size X,Y and DPI (DDI)
+
+from the block "KAP FILE FORMAT "
+select all the green tiles and CTR + C
+
+Step 7 :
+go to the folder IMGKAP is and create new .TXT file
+open file and PASTE cpied text
+DELETE LAST EMPTY ROW <<<<<<<<<<<<<<<<<<<<!!!!!!!
+save
+go to exel 
+copy the text next to "KAP FILE FORMAT" that ends in ".kap"
+rename the just made .TXT file with the copied text
+
+step 8 (OPTIONAL):
+follow steps in step 7 for the "BSB FILE FORMAT "
+Programs such as OPENCPN dont need a BSB file, only the kap file 
+
+step 9 :
+OPEN IMGKAP 
+go to exel and copy either one of the green tiles from "IMGKAP copy paste"  
+and paste it in the IMGKAP 
+automaticly a kap file is created in the same folder that can now be read in navigation program 
+
+HAVING TROUBLE RUNNING IMGKAP?
+open command prompt (start > cmd)
+type > "cd URL/imgkapfolder" > enter
+now you can paste the text from exel
+
+
+
 
 
 
