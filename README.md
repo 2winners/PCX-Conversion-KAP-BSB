@@ -51,7 +51,7 @@ step 4 :
 
 Open the created image.png in GIMP
 
-4.1(optional) goto > image > mode > indexed > set colors to 16 to 127 (if you want NIGHT colors for map max 64) but i recomend 16(makes file smaller)
+4.1(optional) goto > image > mode > indexed > set colors to 16 to 127 (if you want NIGHT colors for map max 64) but i recomend 24(makes file smaller)
 
 4.2 if done 4.1 file > overwrite image.png
 
