@@ -55,6 +55,8 @@ Open the created image.png in GIMP
 
 4.2 if done 4.1 file > overwrite image.png
 
+* In some cases some BLOCKS do not show in the final image is because of missing layers, find the blocks (right click) and open with GIMP then goto > image > mode > RGB , and on the layer RIGHT CLICK > ADD ALPA , then : file > overwrite image.png ( if many i suggest you create some key shortcuts to do those steps) 
+
 ___
 
 step 5 :
@@ -92,9 +94,7 @@ ___
 Step 7 :
 go to the folder IMGKAP is and create new .TXT file
 
-open file and PASTE cpied text
-
-DELETE LAST EMPTY ROW <<<<<<<<<<<<<<<<<<<<!!!!!!!
+open file and PASTE copied text
 
 save
 
