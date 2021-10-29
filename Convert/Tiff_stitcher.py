@@ -6,7 +6,7 @@ import math
 import os
 import sys  
 # change the PATH to the folder where all the chart folders are found 
-path = r"C:\Users\NAME\Desktop\Belgium and Holland 1"
+path = r"C:\Users\__NAME__\Desktop\Chartpack"
 Bpath = "Blank.png" #the file name of the blank block
 chart_foldername = "M" #the common fisrt letter of the map folders
 
@@ -14,7 +14,7 @@ chart_foldername = "M" #the common fisrt letter of the map folders
 # Step 1:
 # Renaming all the files in the folders to have an PCX extencion
 # setstep 3 to "False" set step 1 to "True"
-RENAME = False 
+RENAME = True
 renameExt = ".PCX"
 
 # Step 2:
@@ -23,9 +23,10 @@ renameExt = ".PCX"
 # Step 3:
 # Stitching together the tiles
 # setstep 1 to "False" set step 3 to "True"
-STITCH = True
+STITCH = False
 ext = ".png" # File extension
-Reconizer = "final" # is used to create the output as "FOLDERNAME + Reconizer.png"
+Reconizer = "" # is used to create the output as "FOLDERNAME + Reconizer.png"
+CreateNewFolder = True #if you want to create new folders with the same name as the file to store the files in afterwards
 
 # The output files will appear in the folder this script exists
 # If image fails please delete the Failed output image or it will skip when you restart
@@ -39,8 +40,8 @@ Reconizer = "final" # is used to create the output as "FOLDERNAME + Reconizer.pn
 path2 = ""          #internal script path
 directory_contents = []
 Chart_Folders = []
-alpa = ['A','B','C','D','E','F','G','H','I','J','K','L','M'] # Add more Letters if you find charts with more
-numbr =['01','02','03','04','05','06','07','08','09','10','11','12'] #add more numbers if you find charts with more
+alpa = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O'] # Add more Letters if you find charts with more
+numbr =['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20'] #add more numbers if you find charts with more
 imlist = []
 
 #checks if Blank Exists
@@ -74,7 +75,7 @@ else:
                     if renameExt in file:
                         print (renameExt)
                     else:
-                        file = upper(file)
+                        file = file.upper()
                         new_name = file + renameExt
                         src =  path + '\\' + folder + '\\' + file
                         print(src)
@@ -131,14 +132,18 @@ else:
                             i = 0
                             shape = imread(Bpath).shape
                             print(shape)
+                            x = 0;
                             while True:
         
                                 try:
                                     im = next(images)
                                     if im.shape != shape :              #if Image is not the same shape replace with a blank ( some "PAN ..." blocks have less layers and can not be stitched)
-                                        print(f"not same {shape}")
+                                        _name = imlist[x].replace(path,'')
+                                        print(f"not same {im.shape} name:" + _name)
+                                        
                                         im = imread(Bpath)
                                     print(f"add image, shape: {im.shape}, type: {im.dtype}")
+                                    x += 1
                                 except StopIteration:
                                     if first:
                                         break
@@ -164,8 +169,11 @@ else:
                         def main():
                             images = (imread(f) for f in imlist) 
                             new = tile_images(images, WIDTH)
+                            
                             imwrite(folder + Reconizer + ".png", new)
-
+                            if not os.path.exists(folder):
+                                if CreateNewFolder:
+                                   os.makedirs(folder)
 
                         def test():
                             im1 = np.arange(65536).reshape(256,256)
@@ -180,6 +188,7 @@ else:
                             # failes
                             new = tile_images(images, 2)
                             imwrite("new2.png", new)
+
     
     
                         if __name__ == "__main__":
