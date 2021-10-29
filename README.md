@@ -77,6 +77,8 @@ fill in the BLUE tiles:
 
 * SCALE
 
+* Chart Datum (important! you have the correct one)(OPEN CPN does not reconize some DATUM's so you can move the map by hand using the OFFSET row)
+
 * Top right LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
 
 * Bottom left LAT, LON + coresponding PIXEL coordinates ( read in GIMP )
